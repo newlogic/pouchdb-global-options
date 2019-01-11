@@ -38,7 +38,6 @@ exports.installGlobalOptionsMethods = function () {
   try {
     wrappers.installWrapperMethods(this, wrapperApi);
   } catch (err) {
-    console.log(err);
     throw new Error("Global options methods already installed.");
   }
 };
